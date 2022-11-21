@@ -9,7 +9,7 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case 'FETCH_GREET/fulfilled':
+    case `${FETCH_GREET}/fulfilled`:
       return { ...state, greeting: action.payload };
     default:
       return state;
