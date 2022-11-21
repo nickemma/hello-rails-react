@@ -1,5 +1,4 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 import api from '../api';
 
 const FETCH_GREET = 'FETCH_GREET';
@@ -18,7 +17,7 @@ export default (state = initialState, action) => {
 };
 
 export const getGreeting = createAsyncThunk(FETCH_GREET, async () => {
-  const response = await axios.get(api);
+  const response = await fetch(api);
   const data = await response.json();
   return data.text;
 });
