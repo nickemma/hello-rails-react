@@ -20,5 +20,5 @@ export default (state = initialState, action) => {
 export const fetchGreeting = createAsyncThunk(FETCH, async () => {
   const response = await axios.get(api);
   const data = await response.json();
-  return data.message;
+  return data.text;
 });

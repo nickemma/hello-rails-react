@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
-import Greetings from './pages/Greetings';
+import { Routes, Route, Link } from 'react-router-dom';
+import Greeting from './pages/Greeting';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       <h1>Hello World!</h1>
       <Link to="/greeting">Go to greeting page</Link>
       <Routes>
-        <Route path="/greeting" element={<Greetings />} />
+        <Route path="/greeting" element={<Greeting />} />
       </Routes>
     </>
   );
