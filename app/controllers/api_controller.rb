@@ -1,9 +1,9 @@
-# class ApiController < ApplicationController
-#   before_action :set_default_format
+class ApiController < ApplicationController
+  before_action :set_default_format
 
-#   private
+  private
 
-#   def set_default_format
-#     request.format = :json
-#   end
-# end
+  def set_default_format
+    request.format = :json
+  end
+end
