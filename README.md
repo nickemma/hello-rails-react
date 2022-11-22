@@ -80,7 +80,7 @@ In the root folder to check the consistency of the app. Please don't make change
 Important note: Since this project uses webpack for the bundling, you need to run:
 
 ```bash
-$ ./bin/dev for window users run yarn build --watch and then start the server
+$ ./bin/dev i am on windows so you've to run yarn build --watch and then start the server
 ```
 
 For you to see the app being applied in the browser during development
