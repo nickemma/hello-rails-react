@@ -1,171 +1,116 @@
-<a name="readme-top"></a>
+# Project Name
 
-<div align="center">
-  <h2><b>Hello Rails React</b></h2>
-</div>
+Hello Rails From React
 
-# 📗 Table of Contents
+# Description the project.
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+This is a simple web app to test working with rails and react
 
-<!-- PROJECT DESCRIPTION -->
+## Built With
 
-# 📖 Hello Rails React <a name="about-project"></a>
+- Languages:
+  _**Ruby**_
+  _**React**_
+  _**Redux**_
+  _**Webpack**_
+  _**Postgresql**_
+- Frameworks: _**Ruby On Rails**_
+- Technologies used: _**Visual Studio Code**_
 
-**Hello Rails React** is a simple web app that combines functionalities of Ruby on Rails and React. It allows users to get a random greeting from the backend API.
+### Requirements
 
-## 🛠 Built With <a name="built-with"></a>
+In order to work on this project, you need to have the following dependencies installed:
 
-### Tech Stack <a name="tech-stack"></a>
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Postgresql](https://www.postgresql.org/)
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
+- [Rails](https://rubyonrails.org/)
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://redux-toolkit.js.org/">Redux Toolkit</a></li>
-  </ul>
-</details>
+## Getting Started
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
-  </ul>
-</details>
+### Clone this repository
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-### Key Features <a name="key-features"></a>
-
-- **It allows a user to get random greeting**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- Coming soon
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need:
-
-- Ruby development environment
-- Rails
-- Node
-- npm or yarn
-
-### Setup
-
-Clone this repository to your desired folder:
-
-```sh
-  cd my-folder
-  git clone git@github.com:amejid/hello-react-rails.git
+```bash
+$ git clone git@github.com:NickEmma/hello-rails-react.git
+$ cd hello-rails-react
 ```
 
-### Install
+### Commands to run
 
-Install this project with:
+Run
 
-```sh
-  cd hello-rails-react
-  bundle install
-  yarn install || npm install
+```bash
+$ bundle install
 ```
 
-### Usage
+To get all the gems required for the project
 
-To run the project, execute the following command:
+Then, run
 
-```sh
-  ./bin/dev
+```bash
+$ npm install
 ```
 
-### Run tests
+To install packages such as style linters
 
-To run tests, run the following command:
+To check linters locally, use
 
-```sh
-  rspec
+```bash
+$ rubocop
+$ npx stylelint "**/*.{css,scss}"
 ```
 
-### Deployment
+Once you have the project correctly set up, run
 
-You can deploy this project using:
-
-```sh
-  git push heroku main
+```bash
+$ bin/rails db:setup
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+To run all migrations, create the database for testing and for development, and insert some data into the database for you to visualize the changes
 
-## 👥 Author <a name="authors"></a>
+Finally, each time you make changes to the project, run
 
-👤 **Said laasri**
+```bash
+$ bundle exec rspec /spec
+```
 
-- GitHub: [@Said-laasri](https://github.com/Said-laasri)
-- Twitter: [@saidlaasr](https://twitter.com/saidlaasr)
-- LinkedIn: [SAID LAASRI](https://www.linkedin.com/in/said-laasri-8a4367172/)
+In the root folder to check the consistency of the app. Please don't make changes to the tests unless completely necessary, and mention it in your PR description.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Important note: Since this project uses webpack for the bundling, you need to run:
 
-## 🔭 Future Features <a name="future-features"></a>
+```bash
+$ ./bin/dev for window users run yarn build --watch and then start the server
+```
 
-- [ ] **It will allow users to record their greeting**
+For you to see the app being applied in the browser during development
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Author
 
-## 🤝 Contributing <a name="contributing"></a>
+👤 **Nicholas Emmanuel**
+
+- GitHub: [@NickEmma](https://github.com/NickEmma)
+- Twitter: [@techieEmma](https://twitter.com/techieEmma)
+- LinkedIn: [@Nicholas Emmanuel](https://www.linkedin.com/in/techieemma/)
+
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Show your support
 
-## ⭐️ Show your support <a name="support"></a>
+Give a ⭐️ if you like this project!
 
-If you like this project you can give me a star.
+## Acknowledgments
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Microverse
+- LazyCoders
+- Coding Partners
+- Inspiration
+- etc
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 📝 License
 
-I would like to thank the Microverse curriculum.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./MIT.md) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project is [MIT](./LICENSE) licensed.
